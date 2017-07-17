@@ -1,4 +1,4 @@
-# react-box-size 📦
+# 📦 react-box-size [![Build Status](https://travis-ci.org/hcjk/react-box-size.svg?branch=master)](https://travis-ci.org/hcjk/react-box-size)
 A basic react-wrapper component for sizing a box.
 
 ## Install

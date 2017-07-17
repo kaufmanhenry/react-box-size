@@ -1,0 +1,143 @@
+{
+  "name": "hcjk/react-box-size",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Default",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "monospace": "Menlo, monospace",
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null
+    },
+    "h0": {},
+    "h1": {},
+    "h2": {},
+    "h3": {},
+    "h4": {},
+    "h5": {},
+    "h6": {},
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "primary": "#08e",
+      "secondary": "#059",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    },
+    "breakpoints": {
+      "xs": "@media screen and (max-width:40em)",
+      "sm": "@media screen and (min-width:40em)",
+      "md": "@media screen and (min-width:52em)",
+      "lg": "@media screen and (min-width:64em)"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/hcjk/react-box-size",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/react-box-size",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "react-box-size",
+      "subhead": "📦 A basic react-wrapper component for sizing a box.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "react-box-size: 📦 A basic react-wrapper component for sizing a box.",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "hcjk",
+          "repo": "react-box-size"
+        }
+      ],
+      "text": "v1.0.1"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>&#x1F4E6; react-box-size <a href=\"https://travis-ci.org/hcjk/react-box-size\"><img src=\"https://travis-ci.org/hcjk/react-box-size.svg?branch=master\"></a></h1>\n\n<h2>Install</h2>\n<pre>$ yarn add react-box-size</pre><h2>Usage</h2>\n<pre><span class=\"hljs-keyword\">import</span> React <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;react&apos;</span>\n<span class=\"hljs-keyword\">import</span> Box <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;react-box-size&apos;</span>\n\n<span class=\"hljs-keyword\">const</span> App = <span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n  &lt;Box mv={<span class=\"hljs-number\">3</span>} mh={<span class=\"hljs-number\">5</span>} pv={<span class=\"hljs-number\">3</span>} ph={<span class=\"hljs-number\">5</span>}&gt;\n    Hi!\n  <span class=\"xml\"><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">Box</span>&gt;</span></span>\n}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> App</pre><h2>API</h2>\n<h4><code>mv</code>, <code>mh</code>, <code>mt</code>, <code>mb</code>, <code>ml</code>, <code>mr</code></h4>\n<p>Controls the margin for a given box. Can be an integer between <code>1</code> and <code>6</code>. The larger the number, the greater the scale of margin.</p>\n<h5>Example</h5>\n<pre>&lt;Box mt={<span class=\"hljs-number\">3</span>} ml={<span class=\"hljs-number\">1</span>} mr={<span class=\"hljs-number\">3</span>} mb={<span class=\"hljs-number\">4</span>} /&gt;\n<span class=\"hljs-comment\">// Creates a box with a top margin of 1, bottom margin of 4, left margin of 1, and right margin of 3</span>\n&lt;Box mh={<span class=\"hljs-number\">3</span>} mv={<span class=\"hljs-number\">1</span>} /&gt;\n<span class=\"hljs-comment\">// Creates a box with a horizontal margin of 3 and a vertical margin of 1</span></pre><h4><code>pv</code>, <code>ph</code>, <code>pt</code>, <code>pb</code>, <code>pl</code>, <code>pr</code></h4>\n<p>Controls the padding for a given box. Can be an integer between <code>1</code> and <code>6</code>. The larger the number, the greater the scale of padding.</p>\n<h5>Example</h5>\n<pre>&lt;Box pt={<span class=\"hljs-number\">3</span>} pl={<span class=\"hljs-number\">1</span>} pr={<span class=\"hljs-number\">3</span>} pb={<span class=\"hljs-number\">4</span>} /&gt;\n<span class=\"hljs-comment\">// Creates a box with a top padding of 1, bottom padding of 4, left padding of 1, and right padding of 3</span>\n&lt;Box ph={<span class=\"hljs-number\">3</span>} pv={<span class=\"hljs-number\">1</span>} /&gt;\n<span class=\"hljs-comment\">// Creates a box with a horizontal padding of 3 and a vertical padding of 1</span></pre><h2>License</h2>\n<p>MIT &#xA9; <a href=\"http://github.com/hcjk\">Henry Kaufman</a></p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/hcjk/react-box-size",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/hcjk",
+          "text": "hcjk"
+        }
+      ]
+    }
+  ]
+}

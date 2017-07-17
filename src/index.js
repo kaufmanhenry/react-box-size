@@ -16,14 +16,14 @@ const Box = ({ mv, mh, mt, mb, ml, mr, pv, ph, pt, pb, pl, pr, ...props }) => {
     paddingLeft: scale[pl || ph || 0],
     paddingRight: scale[pr || ph || 0],
     // Add default styles
-    ...props.styles
+    ...props.style
   }
   return <div style={styles}>{ props.children }</div>
 }
 
 Box.propTypes = {
   children: PropTypes.node.isRequired,
-  styles: PropTypes.object,
+  style: PropTypes.object,
   // Margins
   // Vertical margin
   mv: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),

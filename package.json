@@ -7,7 +7,17 @@
   "author": "Henry Kaufman <hkaufman19@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "ava --verbose"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit",
+    "files": [
+      "test/*.js"
+    ]
   },
   "dependencies": {
     "prop-types": "^15.5.10",

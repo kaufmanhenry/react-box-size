@@ -2,7 +2,7 @@
   "name": "react-box-size",
   "version": "1.0.3",
   "description": "A basic react-wrapper component for sizing a box.",
-  "main": "dist/bundle.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/hcjk/react-box-size.git",
   "author": "Henry Kaufman <hkaufman19@gmail.com>",
   "license": "MIT",

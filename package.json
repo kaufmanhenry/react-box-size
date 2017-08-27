@@ -1,6 +1,6 @@
 {
   "name": "react-box-size",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A basic react-wrapper component for sizing a box.",
   "main": "dist/bundle.js",
   "repository": "https://github.com/hcjk/react-box-size.git",

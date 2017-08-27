@@ -2,13 +2,14 @@
   "name": "react-box-size",
   "version": "1.0.1",
   "description": "A basic react-wrapper component for sizing a box.",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "repository": "https://github.com/hcjk/react-box-size.git",
   "author": "Henry Kaufman <hkaufman19@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "ava --verbose"
+    "test": "ava --verbose",
+    "build": "NODE_ENV=production webpack -p"
   },
   "ava": {
     "require": [

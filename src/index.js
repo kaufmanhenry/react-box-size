@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import scale from './scale'
 
-const Box = ({ mv, mh, mt, mb, ml, mr, pv, ph, pt, pb, pl, pr, ...props }) => {
+const Box = ({ mv, mh, mt, mb, ml, mr, pv, ph, pt, pb, pl, pr, float, ...props }) => {
   const styles = {
     // Margins
     marginTop: scale[mt || mv || 0],
@@ -15,6 +15,8 @@ const Box = ({ mv, mh, mt, mb, ml, mr, pv, ph, pt, pb, pl, pr, ...props }) => {
     paddingBottom: scale[pb || pv || 0],
     paddingLeft: scale[pl || ph || 0],
     paddingRight: scale[pr || ph || 0],
+    // Floats
+    float: float || 'none',
     // Add default styles
     ...props.style
   }
@@ -50,7 +52,10 @@ Box.propTypes = {
   // Left padding
   pl: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
   // Right padding
-  pr: PropTypes.oneOf([1, 2, 3, 4, 5, 6])
+  pr: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
+
+  // Floats
+  float: PropTypes.oneOf(['left', 'right'])
 }
 
 export default Box

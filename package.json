@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
+    "dev": "x0 dev demo/App.js",
     "test": "ava --verbose",
     "build": "NODE_ENV=production webpack -p",
     "prepublish": "babel src -d dist"

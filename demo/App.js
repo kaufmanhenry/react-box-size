@@ -71,6 +71,17 @@ const App = () => {
           <code style={styles.code}>`pr={3}`</code>
         </Box>
       </Box>
+      <Box mv={6}>
+        <Box mb={1}>
+          <h2>Floats</h2>
+        </Box>
+        <Box style={styles.containerBox} float='left'>
+          <code style={styles.code}>`float="left"`</code>
+        </Box>
+        <Box style={styles.containerBox} float='right'>
+          <code style={styles.code}>`float="right"`</code>
+        </Box>
+      </Box>
     </Box>
   )
 }
